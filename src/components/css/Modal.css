@@ -1,0 +1,81 @@
+.modals{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    /* pointer-events: none; */
+}
+.Question-Input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size:20px;
+    margin-bottom:10px;
+    border-bottom: 2px solid red;
+}
+.modals-title{
+    text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size:38px;
+    /* margin-top:14px; */
+    margin-bottom:25px;
+}
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modals-content {
+    width:430px;
+    height: 470px;
+    text-align: center;
+    background:white;
+    border-radius: 10px;
+    padding: 10px ;
+    box-shadow: 2px 4px 12px #696464;
+    overflow:auto;
+}
+.btn{
+    margin-right: 6px;
+}
+.inputs-fields{
+    margin-bottom:12px;
+    width:79%;
+    padding:11px;
+    border-radius: 6px;
+    background-color:none;
+    background:transparent;
+    border:none;
+    border:1px solid gray;
+}
+.Log{
+    margin-bottom:12px;
+    width:79%;
+    padding:11px;
+    border-radius: 6px;
+    background-color:yellow;
+    border:1px solid gray;
+    font-weight:500;
+}
+.Log:hover{
+    background-color:#FADB5A;
+    transition:3ms;
+}
+.modals-header{
+    display:flex;
+    justify-content:flex-end;
+    text-align: center;
+    flex-direction: row;
+    margin-top:7px;
+    position:relative;
+    bottom:0;
+}
