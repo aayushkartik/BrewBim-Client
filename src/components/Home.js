@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './Footer.js'
+import {Link} from 'react-router-dom'
 import './css/home.css';
 const Home = () => {
     return (
@@ -9,6 +10,8 @@ const Home = () => {
             <b>Create prospect lists from LinkedIn.</b> 
             <p className='supporting-text'>Export leads from LinkedIn with accurate contact info 
                         and connect directly with your audience.</p>
+            <Link type='button' className='btonn' to='/register'>Get Started</Link>
+            
         </div>
         </div>
         <div className='heading-2 container div2'>
@@ -56,7 +59,7 @@ const Home = () => {
         <div className='heading-2 container join2'>
             <b>Join for free today</b> 
             <p className='supporting-text'>Supercharge your team with the best accceleration and LinkedIn automation tools</p>
-            <button className='bton'>Join us</button>
+            <Link type='button' className='bton' to='/register'>Join us</Link>
             <p className='supporting-text'>Get <b>30 credits</b> absolutely free</p>
         </div>
         </div>

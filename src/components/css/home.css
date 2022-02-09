@@ -11,13 +11,13 @@ html{
 }
 .upper-block{
     margin-top:150px;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
 }
 .heading-2 {
     margin-top:60px;
     line-height: 110%;
     text-align: center;
-    font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1100 - 300)));
+    font-size: calc(40px + (48 - 40) * ((100vw - 300px) / (1100 - 300)));
     font-family: sans-serif;
 }
 .supporting-text{
@@ -26,7 +26,7 @@ html{
     line-height:normal
 }
 .div2{
-    padding: 50px 30px 30px 20px;
+    padding: 53px 30px 30px 20px;
     height:60vh;
     background-color:yellow;
     border-radius:15px;
@@ -42,6 +42,7 @@ html{
     border-radius:10px;
     text-align:center;
 }
+
 .Promoclass {
     width: 80% !important;
     margin-top:50px;
@@ -60,20 +61,54 @@ html{
     margin-top:90px;
     margin-bottom: 90px;
 }
-.bton{
-    width:17%;
+.bton {
+    width:22vw;
     margin-top:0;
-    padding: 11px;
+    padding: 14px;
     line-height: normal;
     text-align: center;
     border-radius: 6px;
     background-color:black;
     color:white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+.btonn{
+    width:29vw;
+    margin-top:0;
+    padding: 14px 10px 10px 15px;
+    line-height: normal;
+    text-align: center;
+    border-radius: 7px;
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+    border: 3px solid black;
+}
+.btonn:hover{
+    text-decoration: none !important;
+    color:white;
+    background-color:black;
 }
 .bton:hover{
+    text-decoration: none !important;
     color:black;
     background-color:white;
-    border:3px solid black;
+    /* border:3px solid black; */
+}
+footer{
+    display:flex;
+    justify-content:center;
+    /* text-align: flex-start; */
+    flex-direction: column;
+    height: 190px;
+    background-color: #27241D;
+    margin-top:20px;
+}
+#footerbrew{
+    text-align: flex-start;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+    font-size:25px;
 }
