@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
+import { JoinButtonC } from "./JoinButtonC";
 import "./css/pricingPage.css";
+import { TrustedByC } from "./TrustedByC";
 
 export const PricingPage = () => {
   return (
@@ -14,16 +16,17 @@ export const PricingPage = () => {
           <br />
           <div class="text-center">
             <h4>Go yearly for the best savings</h4>
+
             <div class="nav price-tabs" role="tablist">
+              <a class="nav-link " href="#yearly" role="tab" data-toggle="tab">
+                Yearly
+              </a>
               <a
                 class="nav-link active"
-                href="#yearly"
+                href="#monthly"
                 role="tab"
                 data-toggle="tab"
               >
-                Yearly
-              </a>
-              <a class="nav-link" href="#monthly" role="tab" data-toggle="tab">
                 Monthly
               </a>
             </div>
@@ -97,53 +100,9 @@ export const PricingPage = () => {
             </div>
           </div>
 
-          <div className="heading-2 container pricing_box">
-            <strong>Trusted by 30,000+ business</strong>
-            <p className="supporting-text">
-              Thousands of startups and organization use BrewBim to improve the
-              productivity of their sales team and create more opportunities.
-            </p>
-            {/* <div className="icons">
-              <i class="fa-brands fa-slack"></i>
-            </div> */}
+          <TrustedByC />
 
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                <ul class="list-unstyled list-inline social text-center">
-                  <li class="list-inline-item">
-                    <i class="fa fa-windows"></i>{" "}
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fa fa-google"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fa fa-slack"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    {/* <i class="fa fa-salesforce"></i> */}
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fa fa-envelope"></i>
-                  </li>
-                </ul>
-              </div>
-              <hr />
-            </div>
-          </div>
-
-          <div className="heading-2 container pricing_joinFree">
-            <strong>Join for free today.</strong>
-            <p className="supporting-text">
-              Supercharge your team with the best sales acceleration and
-              linkedIn automation tools.
-            </p>
-            <form class="search-form price_form">
-              <input placeholder="Work Email" type="text" />
-              <button class="btn" type="submit">
-                Create Account
-              </button>
-            </form>
-          </div>
+          <JoinButtonC />
         </div>
 
         {/* reviews */}
