@@ -1,0 +1,36 @@
+.lm_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.lm_tabs {
+  display: flex;
+  flex-direction: row;
+}
+.lm_tabs > span {
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  background-color: rgb(247, 247, 247);
+}
+.lm_tabs > span:hover {
+  background-color: #fadb5a;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+  background: #ececec;
+  margin-top: 20px;
+}
+
+.project-list > tbody > tr > td {
+  padding: 12px 8px;
+}
+
+.project-list > tbody > tr > td .avatar {
+  width: 22px;
+  border: 1px solid #ccc;
+}
