@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 export const Prospect = () => {
   return (
     <>
@@ -68,9 +68,9 @@ export const Prospect = () => {
               </table>
 
               <div class="text-center">
-                <button class="btn btn-info" type="submit">
+                <Link to="/prospect-master" class="btn btn-info" type="submit">
                   Start Prospecting
-                </button>
+                </Link>
               </div>
             </form>
           </div>

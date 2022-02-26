@@ -18,22 +18,8 @@ function UserProvider({ children }) {
     setUser({ username: null, token: null });
     localStorage.removeItem("user");
   };
-  // alert
-  const [alert, setAlert] = useState({
-    show: false,
-    msg: "",
-    type: "success",
-  });
-  const showAlert = ({ msg, type = "success" }) => {
-    setAlert({ show: true, msg, type });
-  };
-  const hideAlert = () => {
-    setAlert({ ...alert, show: false });
-  };
   return (
-    <UserContext.Provider
-      value={{ user, userLogin, userLogout, alert, showAlert, hideAlert }}
-    >
+    <UserContext.Provider value={{ user, userLogin, userLogout }}>
       {children}
     </UserContext.Provider>
   );

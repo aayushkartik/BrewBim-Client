@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./css/list_master.css";
+import Footer from "./Footer";
+import { TableListMaster } from "./TableListMaster";
 
 export const List_master = () => {
   return (
@@ -10,24 +12,33 @@ export const List_master = () => {
         <div className="lm_nav mb-5">
           <div className="lm_tabs">
             <span>
-              <Link to="/">Home</Link>
+              <Link className="nav-link" to="/app">
+                Home
+              </Link>
             </span>
             <span>
-              <Link to="list-master">Prospect List</Link>
+              <Link className="nav-link" to="list-master">
+                Prospect List
+              </Link>
             </span>
             <span>
-              {" "}
-              <Link to="prospect-master">Prospects</Link>
+              <Link className="nav-link" to="prospect-master">
+                Prospects
+              </Link>
             </span>
-            <span>Checked on Linkedin</span>
+            <span>
+              <Link className="nav-link" to="checked-on-linkedin">
+                Checked on Linkedin
+              </Link>
+            </span>
           </div>
           <div className="credits">
             Credits : <span>231</span>
           </div>
         </div>
-
+        <TableListMaster />
         {/* prospect list table  */}
-        <div class="table-responsive">
+        {/* <div class="table-responsive">
           <table class="table colored-header datatable project-list">
             <thead>
               <tr>
@@ -64,8 +75,9 @@ export const List_master = () => {
               </tr>
             </tbody>
           </table>
-        </div>
+</div> */}
       </div>
+      <Footer />
     </>
   );
 };

@@ -1,29 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+import { TableProspectMaster } from "./TableProspectMaster";
 
 export const Prospect_master = () => {
   return (
-    <div className="container">
-      <div className="lm_nav mb-5">
-        <div className="lm_tabs">
-          <span>
-            <Link to="/">Home</Link>
-          </span>
-          <span>
-            <Link to="list-master">Prospect List</Link>
-          </span>
-          <span>
-            {" "}
-            <Link to="prospect-master">Prospects</Link>
-          </span>
-          <span>Checked on Linkedin</span>
+    <>
+      <div className="container">
+        <div className="lm_nav mb-5">
+          <div className="lm_tabs">
+            <span>
+              <Link className="nav-link" to="/app">
+                Home
+              </Link>
+            </span>
+            <span>
+              <Link className="nav-link" to="list-master">
+                Prospect List
+              </Link>
+            </span>
+            <span>
+              <Link className="nav-link" to="prospect-master">
+                Prospects
+              </Link>
+            </span>
+            <span>
+              <Link className="nav-link" to="checked-on-linkedin">
+                Checked on Linkedin
+              </Link>
+            </span>
+          </div>
+          <div className="credits">
+            Credits : <span>231</span>
+          </div>
         </div>
-        <div className="credits">
-          Credits : <span>231</span>
-        </div>
-      </div>
+        <TableProspectMaster />
 
-      <div class="table-responsive">
+        {/* <div class="table-responsive">
         <table class="table colored-header datatable project-list">
           <thead>
             <tr>
@@ -70,7 +83,9 @@ export const Prospect_master = () => {
             </tr>
           </tbody>
         </table>
+      </div> */}
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
